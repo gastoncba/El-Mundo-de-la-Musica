@@ -1,0 +1,39 @@
+.atributos {
+    font-family: $bebas-font;
+    font-style: italic;
+    font-size: 140%;
+    color:white;
+}
+
+.atributos__titulo {
+    font-size: 180%;
+}
+
+.atributos__nombre {
+    color: $rojoNaranja;
+}
+
+.atributos__precio {
+    font-size: 200%;
+    color: white;
+}
+
+.boton-carrito {
+    background-color: $rojoNaranja;
+    font-size: 120%;
+    margin-top: 7%;
+    margin-left:0;
+    padding: 2% 4%;
+    border-radius: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.boton-carrito__icon {
+    font-family: $travel-font;
+    color: white;
+}
+
+.boton-carrito:hover {
+    color: white;
+}

@@ -1,0 +1,26 @@
+.tabla  {
+    border-collapse: collapse;
+    font-family: $bebas-font;   
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+.tabla__cabecera {
+    border-style: solid;
+    border-color: white;
+    color: black;
+    background-color:rgb(168, 168, 161);
+    width: 20vw;
+    text-align: center;
+}
+
+.tabla__celda {
+    @extend .tabla__cabecera;
+}
+
+#titulo-te-esperamos {
+    font-family: $pemanent-font;
+    color:deeppink;
+    font-size: $size-titulo-te-esperamos;
+    margin-left: 30%;
+}

@@ -1,0 +1,301 @@
+/*Tablet*/
+@media only screen and (max-device-width: 991px) {
+    /*Se adapta la cabecera de la página principal*/
+    .presentacion {
+        background-position:top;
+    }
+
+    /*Se tapa el titulo de presentación*/
+    .presentacion__titulo {
+
+        display: none;
+    }
+
+    .presentacion__sub {
+        font-size: 290%;
+        background: white;
+        color: black;
+        width: 100vw;
+        margin-top: 0;
+        padding-left: 2%;
+        animation-name: $efectoOpacidad;
+        animation-duration: 2s;
+    }
+
+    .presentacion__logo {
+        display: block;
+        font-family: $lazer-font;
+        font-style: italic;
+    }
+
+    /*Se muestra el logo en el menu principal*/
+    .menu__logo {
+        display: inline;
+        font-family: lazer;
+        font-style: italic;
+        color: white !important;
+        margin-left: 5%;
+        font-size: 120%;
+        @include efecto($efectoParaTituloPrincipal, 4s,1,ease-in,0s);
+    }
+
+    /*Se oculta el titulo "volver al inicio"*/
+    .volver-inicio {
+        display: none;
+    }
+
+    /*Se transforma la seccion principal*/ 
+
+    .principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .articulo__imagen{
+        width: 35vw;
+        margin-left: 12%;
+    }
+
+    .articulo__contenido {
+        width: 80%;
+    }
+
+    .articulo__titulo--registro {
+        padding-left: 34%;
+    }
+
+    /*Se adaptan los formularios y sus titulos correspondientes*/
+
+    .formulario--registro {
+        width: 65vw;
+        margin-left: 17%;
+    }
+
+    .formulario--login {
+        width: 45vw;
+        margin-left: 30%;
+    }
+
+    .formulario--turno {
+        width: 70vw;
+        margin-left: 15%;
+    }
+
+    .body-formulario__titulo--registro, .body-formulario__titulo--login {
+        margin-left: 38%;
+    }
+
+    .body-formulario__titulo--turno {
+        margin-left: 30%;
+    }
+
+    /*Se adapta el catalogo de los productos*/
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        margin: 2% 0;
+        width: 100%;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .producto__imagen {
+        height:auto;
+    }
+
+    /*Se adaptan las secciones de los intrumentos de marcas nacionales*/
+    .seccion-instrumento--strato, .seccion-instrumento--gothic {
+        width: 100vw;
+        margin-left: 0;
+        border-radius: 0;
+        animation-name: none;
+    }
+   
+    @each $instrumento, $url-foto in $foto-instrumento-nacional-mobile {
+        .seccion-instrumento--#{$instrumento} {
+            background-image: $url-foto;
+        }
+    }
+
+    .instrumento {
+        width: 100%;
+        margin-left: 1%;
+        background: none;
+    }
+
+    /*Se adapta el titulo principal de la página de los instrumentos nacionales*/
+    .titulo--nacionales {
+        background: $verdeAgua;
+        width: 100vw;
+        animation-name: none;
+        margin:0;
+    }
+
+    .parrafo { font-size: 150%; margin-left: 0;}
+
+    /*Se adapta el menu de los amplificadores*/
+    .menu-amplificadores {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .menu-amplificadores__guitarra, .menu-amplificadores__bajo {
+        width: 100vw;
+        margin: 8% 0;
+    }
+
+    /*Se adapta la seccion de espectaculos*/
+    #titulo-espectaculo, .espectaculo {
+        display: block;
+        margin: 0;
+        margin-bottom: 5%;
+        width: 100vw;
+    }
+
+    #titulo-espectaculo {
+        font-size: 260%;
+        padding-left:3% ;
+    }
+    .titulo {
+        margin-right: 20%;
+    }
+}
+
+/*Smartphone*/
+@media only screen and (max-device-width: 576px)  {
+
+    .presentacion {
+        height: 30vh;
+    }
+
+    .presentacion__sub {
+        font-size: 140%;
+    }
+
+    .presentacion__logo {
+        display: none;
+    }
+
+    .principal {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 2%;
+
+        margin-bottom: 25%;
+    }
+
+    .articulo__imagen {
+        width: 60vw;
+        margin-left: 20%;
+    }
+
+    .articulo__titulo {
+        padding-left: 37%;   
+    }
+
+    .articulo__titulo--marcas {
+        padding-left: 40%;
+    }
+
+    /*Nuevamente se adaptan los formularios y sus titulos correspondientes*/ 
+
+    .formulario {
+        width: 95vw;
+        margin-left: 3%;
+    }
+
+    .body-formulario__titulo--registro {
+        margin-left: 33%;
+    }
+
+    .body-formulario__titulo--login {
+        margin-left: 24%;
+    }
+
+    .body-formulario__titulo--turno {
+        margin-left: 0;
+    }
+
+    /*Se adaptan las tablas*/
+    .tabla {
+        width: 100vw;
+        margin-left:0 ;
+    }
+
+    /*Se transforma y se adapta el listado de marcas*/
+    .marca {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1%;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100vw; 
+    }
+
+    .marca__enlace {
+        font-size: 330%;
+    }
+
+    .titulo--marcas {
+        margin-left:15% ;
+    }
+
+    /*Se adapta la seccion de espectaculos*/
+
+    /*se apaptan los titulos de los espectaculos*/
+    .espectaculo__titulo--chinos {
+        @include MedidaTituloEspectaculo($heater-font, 300%,#b34180);
+    }
+    
+    .espectaculo__titulo--zar {
+        @include MedidaTituloEspectaculo($urae-font, 200%, black);
+    }
+    
+    .espectaculo__titulo--mato {
+        @include MedidaTituloEspectaculo($pemanent-font, 150%, white);
+    }
+
+    /*se apaptan las fechas de los epectaculos*/
+    .espectaculo:hover {
+        .espectaculo__fecha, .espectaculo__entrada {
+            font-size: 150%;            
+        }
+    }
+
+    /*Se adapta el titulo de las páginas*/
+    .titulo {
+        animation-name: none;
+        margin: 0;
+    }
+
+    /*Se adapta el titulo te esperamos de la tabla de horarios*/
+    #titulo-te-esperamos {
+        margin: 0;
+    }
+}
+
+/*Small Smartphones*/
+@media only screen and (max-device-width: 320px) {
+    .menu__logo {
+        font-size: 100%;
+    }
+
+    .articulo__titulo--login {
+        padding-left: 33%;
+    }
+
+    .articulo__titulo--espectaculos {
+        padding-left: 33%;
+    }
+
+    /*Se adapta la seccion de espectaculos*/
+    /*Se adapta el titulo de la seccion de espectaculos*/
+    #titulo-espectaculo {
+        font-size: 200%;
+    }
+}

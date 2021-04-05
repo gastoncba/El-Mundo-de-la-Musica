@@ -1,0 +1,33 @@
+/*Medidas utilizadas en el sitio web*/
+
+/*letras y campos de los formularios*/
+$letra-form: 180%;
+$campos-form: 140%;
+$hover-form: rgb(168, 168, 161);
+$color-botones: white;
+$color-bordes-botones: white;
+$titulos-form: 280%;
+$ayuda-form: 120%;
+$combo-form: 90%;
+$texto-form: 70%;
+
+/*tamaño de los iconos de las marcas*/
+$icon-marcas: 430%;
+
+/*tamaño de letra de accordion*/
+$titulo-accordion: 160%;
+$letra-accordion: 180%;
+
+/*tamaño para titulo presentacion, titulo secundario (presentacion__sub)
+titulo común*/
+$size-titulo-presentacion: 800%;
+$size-titulo-secundario: 190%;
+$size-titulo-comun: 300%;
+$size-titulo-te-esperamos: 190%; 
+
+/*medidas para los titulos de los proximos shows*/
+@mixin MedidaTituloEspectaculo($font, $size, $color) {
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+}

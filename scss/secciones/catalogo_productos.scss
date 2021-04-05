@@ -1,0 +1,50 @@
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 70px;
+    margin: 2% 3%;
+}
+
+.producto {
+    border-radius: 1rem;
+    border: 0.1rem solid $rojoNaranja;
+    background-color: $colorPagina;
+}
+
+.producto__enlace {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+.producto__imagen {
+    border-radius: 1rem; 
+    width: 100%;
+    height: 65vh;
+}
+
+.producto__nombre, .producto__stock {
+    font-family: 'Bebas Neue', cursive;
+    font-style: italic;
+    font-size: 150%;
+    color: white;
+}
+
+.producto__stock {
+      color: $colorConSock;
+}
+
+.producto__stock--sin-stock {
+      color:$colorSinStock
+}
+
+.producto:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.producto:hover {
+    .producto__nombre, .producto__stock {
+          color: $rojoNaranja;
+    }
+}

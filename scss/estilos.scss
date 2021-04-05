@@ -1,0 +1,31 @@
+@import 'variables/tipografia';
+@import 'variables/colores';
+@import 'variables/animaciones';
+@import 'variables/direcciones';
+@import 'variables/medidas';
+@import 'secciones/index.scss';
+@import 'secciones/titulo_paginas.scss';
+@import 'secciones/catalogo_productos.scss';
+@import 'secciones/productos_descripcion.scss';
+@import 'secciones/formularios.scss';
+@import 'secciones/marcas.scss';
+@import 'secciones/bienvenida.scss';
+@import 'secciones/servicios.scss';
+@import 'secciones/locales_horarios';
+@import 'secciones/instrumentos_nacionales.scss';
+@import 'secciones/estructura_imagenes.scss';
+@import 'secciones/espectaculos.scss';
+@import 'secciones/amplificadores.scss';
+@import 'secciones/metodos_pago.scss';
+@import 'secciones/terminos.scss';
+@import 'secciones/media_query.scss'; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $colorPagina;
+}

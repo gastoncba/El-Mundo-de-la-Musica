@@ -1,0 +1,82 @@
+.seccion-instrumento {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 40vh;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: 0.1rem solid $verdeAgua;
+    border-radius: 2rem;
+
+    animation-name: $efectoParaSecciones;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+}
+
+@each $instrumento, $url-foto in $foto-instrumento-nacional {
+    
+    .seccion-instrumento--#{$instrumento} {
+        background-image: $url-foto;
+    }
+}
+
+.instrumento {
+    font-family: $bebas-font;
+    font-style: italic;
+    color: white;
+    font-size: 130%;
+    width: 50%;
+    background: rgb(0,0,0);
+    background: $gradienteTransparenciaNegro;
+    border-radius: 2rem;
+
+    animation-name: $efectoOpacidad;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+}
+
+.instrumento__icon-marca {
+    font-family: $long-font;
+    font-size: 160%;
+}
+
+.instrumento__descripcion {
+    display: inline-block;
+    color: black;
+    background-color:white ;
+    border-radius: 1rem;
+    font-size: 130%;
+    padding:0 1% ;
+}
+
+.parrafo {
+    font-family: $bebas-font;
+    font-size: 170%;
+    font-style: italic;
+    margin-left: 10%;
+    color: white;
+}
+
+.parrafo__boton {
+    background-color:white;
+    color: black;
+    margin-left: 1%;
+    padding: 0 1%;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+.parrafo__boton:hover {
+    background-color: $verdeAgua;
+    color: white;
+}

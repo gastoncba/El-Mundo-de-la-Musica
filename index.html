@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="¡El Mundo de la musica YA! es una red de locales ubicados en la provincia de Córdoba dedicados a la 
+    comercialización de instrumentos musicales, 
+    accesorios, amplificadores, equipos de sonido. Todo lo
+    necesario para el músico a un precio exclusivo y accesible">
+
+    <meta name="keywords" content="¡El Mundo de la musica YA!, Instrumentos musicales, Espectaculos, Amplificadores, Guitarras, Baterias,
+    Bajos, luthier">
+
+    <link rel="icon" href="imagenes/logo.png" type="imagen/png" sizes="20x20">
+
+    <!--Enlace de CDN Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--aca hacemos uso de los estilos de google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet">
+
+    <!--Aca hacemos uso de los fonts del sitio web font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    
+    <title>El Mundo de la Musica YA!</title>
+</head>
+
+<body>
+    <header class="presentacion">
+        <h1 class="presentacion__titulo">El Mundo de la musica YA!</h1>
+        <h2 class="presentacion__sub">
+            <i class="presentacion__logo">El Mundo de la musica YA!</i>
+            Lleva los instrumentos que quieras al mejor precio!
+        </h2>
+    </header>
+    
+    <!--Navbar de Bootstap-->
+    
+    <nav class="navbar navbar-expand-lg navbar-light menu p-0"> 
+        <a class="navbar-brand menu__logo" href="index.html">El mundo de la Musica ya!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto">
+
+        <li class="nav-item">
+            <a class="nav-link menu__item" href="bienvenida/bienvenida.html">Quienes Somos</a>
+        </li>
+
+        <li class="nav-item dropdown desplegable"> 
+            <a class="nav-link dropdown-toggle desplegable__nombre" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Productos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item desplegable__item" href="instrumentos/instrumentos.html">Instrumentos</a>
+              <a class="dropdown-item desplegable__item" href="instrumentos_nacionales/instrumentos_nacionales.html">Instrumentos Nacionales</a>
+              <a class="dropdown-item desplegable__item" href="accesorios/accesorios.html">Accesorios</a>
+              <a class="dropdown-item desplegable__item" href="amplificadores/amplificadores.html">Amplificadores</a>
+              <a class="dropdown-item desplegable__item" href="pedales/pedales.html">Pedales</a>
+              <a class="dropdown-item desplegable__item" href="equipos/equipos.html">Equipos de sonido</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown desplegable"> 
+            <a class="nav-link dropdown-toggle desplegable__nombre" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios de reparacion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item desplegable__item" href="servicios/servicios.html">Tipos de servicios</a>
+              <a class="dropdown-item desplegable__item" href="formularios/form_sol_turnos.html">Solicitar Turno para reparacion</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link menu__item" href="horarios/tabla_horarios.html">Locales y Horarios</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+    <main>
+        <section class="principal"> <!--bloque-->
+            <article class="articulo"> <!--bloque-->
+                <a class="articulo__enlace" href="formularios/form_registro.html">
+                    <img class="articulo__imagen" src="imagenes/icon_regis.jpg" class="img-fluid" alt="imagen_registro">
+                    <h3 class="articulo__titulo articulo__titulo--registro">Registrate</h3>
+                    <p class="articulo__contenido">Registrate para 
+                        recibí las noticias mas actuales del mundo de la musica, 
+                        beneficios y descuentos!!
+                    </p>
+                </a>
+            </article>
+        
+            <article class="articulo"> <!--bloque-->
+                <a class="articulo__enlace" href="formularios/login.html">
+                    <img class="articulo__imagen" src="imagenes/icon_login.jpg" class="img-fluid" alt="imagen_login">
+                    <h3 class="articulo__titulo articulo__titulo--login">Iniciar Sesion</h3>
+                    <p class="articulo__contenido">Si tienes cuenta HACE CLICK ACA para iniciar sesion y
+                    comenzar a gozar de los descuentos!</p>
+                </a>
+            </article>
+        
+            <article class="articulo"> <!--bloque-->
+                <a class="articulo__enlace" href="marcas/marcas.html">
+                    <img class="articulo__imagen" src="imagenes/icon_marca.jpg" class="img-fluid" alt="imagen_marcas">
+                    <h3 class="articulo__titulo articulo__titulo--marcas">Marcas</h3>
+                    <p class="articulo__contenido">Tenemos las mejores marcas a los mejores precios! HACE CLICK y mira!</p> 
+                </a> 
+            </article>
+
+            <article class="articulo"> <!--bloque-->
+                <a class="articulo__enlace" href="espectaculos/espectaculos.html">
+                    <img class="articulo__imagen" src="imagenes/concierto.jpg" class="img-fluid" alt="imagen_concierto">
+                    <h3 class="articulo__titulo articulo__titulo--espectaculos">espectaculos</h3>
+                    <p class="articulo__contenido">Tambien vendemos entradas a diferentes espectaculos musicales!</p>
+                </a>
+            </article>
+    </main>
+    
+    <footer class="pie"> <!--bloque-->
+        <h3 class="pie__titulo">Seguinos en nuestras redes:</h3>
+        <ul class="redes"> <!--bloque-->
+            <li class="redes__item"><a class="redes__enlace" href=""><i class="fab fa-facebook redes__icon"></i></a></li>
+            <li class="redes__item"><a class="redes__enlace" href=""><i class="fab fa-instagram redes__icon"></i></a></li>
+            <li class="redes__item"><a class="redes__enlace" href=""><i class="fab fa-spotify redes__icon"></i></a></li>
+            <li class="redes__item"><a class="redes__enlace" href=""><i class="fab fa-youtube redes__icon"></i></a></li>
+            <li class="redes__item"><a class="redes__enlace" href=""><i class="fas fa-guitar-electric redes__icon"></i></a></li>
+        </ul>
+
+        &copy derechos reservados 2021
+    </footer> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

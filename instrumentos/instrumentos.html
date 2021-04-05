@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/logo.png" type="imagen/png" sizes="20x20">
+
+    <meta name="description" content="Mira y descrubi los instrumentos músicales que comercializamos!">
+
+    <meta name="keywords" content="Instrumentos musicales, Instrumentos de cuerda, Instrumentos de viento, 
+    Instrumentos de percusión, Instrumentos electricos, guitarras, bajos, guitarras electricas">
+    
+    <!--Enlace de CDN Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!--aca hacemos uso de los estilos de google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Instrumetos</title>
+</head>
+<body>
+
+    <head>
+        <h1 class="titulo">Instrumentos Musicales</h1>
+    </head>
+
+    <!--Navbar de Bootstap-->
+    <nav class="navbar navbar-expand-lg navbar-light menu"> 
+      <a class="navbar-brand menu__logo" href="../index.html">El mundo de la Musica ya!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto">
+
+        <li class="nav-item dropdown desplegable"> 
+            <a class="nav-link dropdown-toggle desplegable__nombre" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cuerdas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item desplegable__item" href="guitarras.html">Guitarras</a>
+              <a class="dropdown-item desplegable__item" href="">violines</a>
+              <a class="dropdown-item desplegable__item" href="">Ukeleles</a>
+              <a class="dropdown-item desplegable__item" href="">bajos</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown desplegable"> 
+            <a class="nav-link dropdown-toggle desplegable__nombre" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Vientos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item desplegable__item" href="">Trompetas, Trompas y Trombones</a>
+              <a class="dropdown-item desplegable__item" href="">Tubas</a>
+              <a class="dropdown-item desplegable__item" href="">Flautas</a>
+              <a class="dropdown-item desplegable__item" href="">Saxofones</a>
+              <a class="dropdown-item desplegable__item" href="">Acordeones</a>
+              <a class="dropdown-item desplegable__item" href="">Armonicas</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown desplegable">
+            <a class="nav-link dropdown-toggle desplegable__nombre" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Percucion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item desplegable__item" href="">Baterias</a>
+              <a class="dropdown-item desplegable__item" href="">Caja Peruana</a>
+              <a class="dropdown-item desplegable__item" href="">Bombos</a>
+              <a class="dropdown-item desplegable__item" href="">Bongoes</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown desplegable"> 
+            <a class="nav-link dropdown-toggle desplegable__nombre" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Electricos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item desplegable__item" href="">Guitarra Electricas</a>
+              <a class="dropdown-item desplegable__item" href="">Samplers</a>
+            </div>
+        </li>
+
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <main>
+    <div>
+      <a class="volver-inicio" href="../index.html">Volver al Inicio</a>
+    </div>
+  </main>  
+
+    <footer class="pie">
+        &copy derechos reservados 2021
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

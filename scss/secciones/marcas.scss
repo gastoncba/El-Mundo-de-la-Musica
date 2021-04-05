@@ -1,0 +1,37 @@
+.body-marca {
+    @extend .estructura-imagen
+}
+
+.body-marca {
+    background-image: $foto-marcas;
+}
+
+.marca {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+    margin-left: 10%;
+}
+
+.marca__enlace {
+    text-decoration: none;
+    color: #ffffff;
+    font-family:gtartings;
+    font-size: $icon-marcas;
+}
+
+.marca__item:hover {
+    transform: scale(1.1);
+}
+
+.marca__enlace:hover {
+    background: rgb(187,209,54);
+    background: $gradienteLinealRojoAmarillo;
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,15 @@
+.boton-accordion {
+    font-family: $bebas-font;
+    font-style: italic;
+    font-size: $titulo-accordion;
+    background: $rojoNaranja;
+    color: white;
+    border: 0.2rem solid white;
+}
+
+.contenido-accordion {
+    background-color: white;
+    font-family: $jura-font;
+    font-size: $letra-accordion;
+    color: black;
+}

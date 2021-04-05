@@ -1,0 +1,42 @@
+@font-face {
+
+    font-family: 'travel';
+    src: url(../font/travel/travelcons.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'durum';
+    src: url(../font/durum/durum_kebab_FFP.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'heater';
+    src: url(../font/heater/Heaters.otf) format('truetype');
+}
+
+@font-face{
+    font-family: 'lazer';
+    src: url(../font/lazer84/Lazer84.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Urae Nium';
+    src: url(../font/urae_nium/urae_nium.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'gtartings';
+    src: url(../font/gtartings/Gtartings.ttf) format('truetype');
+}
+
+$lazer-font: lazer;
+$travel-font: travel;
+$marcas-font: gtartings;
+$heater-font: heater;
+$durum-font: durum;
+$urae-font: Urae Nium;
+$long-font: 'Long Cang', cursive;
+$bebas-font: 'Bebas Neue', cursive;
+$jura-font: 'Jura', sans-serif;
+$pemanent-font: 'Permanent Marker', cursive;
+$roboto-font:'Roboto', sans-serif;

@@ -1,0 +1,46 @@
+.menu-amplificadores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-align: center;
+}
+
+.menu-amplificadores__guitarra {
+    background-position: center;
+    background-size: cover;
+    margin: 1% 5%;
+    width: 35vw;
+    height: 80vh;
+    border-radius: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    font-style: italic;
+    color: white;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+.menu-amplificadores__bajo {
+    @extend .menu-amplificadores__guitarra;
+}
+
+.menu-amplificadores__guitarra:hover {
+    box-shadow: 0rem 0rem 1rem 1rem rgba(247, 239, 239, 0.2);
+    transform: scale(1.1);
+}
+
+.menu-amplificadores__bajo:hover {
+    @extend .menu-amplificadores__guitarra:hover;
+}
+
+@each $i in guitarra,bajo {
+
+    .menu-amplificadores__#{$i} {
+        background-image: url(../imagenes/#{$i}_con_ampli.jpg);
+
+        @if $i==bajo {
+            color: black;
+        }
+    }
+
+}

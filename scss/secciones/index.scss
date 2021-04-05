@@ -1,0 +1,159 @@
+.presentacion {
+    @extend .estructura-imagen
+}
+
+.presentacion {
+    background-image: $foto_portada;
+    width: 100vw;
+    height: 100vh;
+}
+
+.presentacion__titulo {
+    font-family: $lazer-font;
+    font-style: italic;
+    background: $rojoNaranja;
+    background: $gradienteLinealRojoAmarillo;
+    -webkit-background-clip: text;
+    background-clip: text; /*se agrega*/
+    -webkit-text-fill-color: transparent;
+    font-size: $size-titulo-presentacion;
+    padding-left:5%;
+    width: 100%;
+
+    @include efecto($efectoParaTituloPrincipal, 4s, 1, ease-in, 0s);
+}
+
+.presentacion__sub {
+    font-family:$bebas-font;
+    font-style: italic;
+    font-size: $size-titulo-secundario;
+    color: white;
+    background: $rojoNaranja;
+    background: $gradienteTransparenciaRojo;
+    margin-top: 15%;
+    padding-left: 15%;
+    width: 100%;
+
+    @include efecto($efectoCuadroDeformado, 4s, 1, ease-in, 0s);
+}
+
+.presentacion__logo {
+    display: none;
+}
+
+.menu {
+    background-color: $rojoNaranja;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    margin-bottom: 5%;
+}
+
+.menu__item {
+    background-color: $rojoNaranja;
+    font-family: $bebas-font;
+    font-style: italic;
+    color: white !important; /*solo por esta vez se utiliza un "!important"*/
+    font-size: 130%;
+}
+/*Aqui se hace uso de la sentencia Extends*/
+.desplegable__nombre {
+    @extend .menu__item;
+}
+
+.desplegable__item {
+    @extend .menu__item;
+}
+
+.menu__item:hover{
+    background-color: #e8eae6;
+    color: $rojoNaranja !important;
+}
+
+.desplegable__nombre:hover {
+    @extend .menu__item:hover;
+}
+
+.desplegable__item:hover {
+    @extend .menu__item:hover;
+}
+
+.menu__logo {
+    display: none;
+}
+
+.principal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2%;
+}
+
+.articulo__enlace {
+    text-decoration: none;
+}
+
+.articulo__imagen {
+    width: 25vw;
+    border-radius: 50%;
+    border: 0.04rem solid $rojoNaranja;
+    margin-left: 5%;
+}
+
+.articulo__titulo {
+    font-family: $bebas-font;
+    padding-left: 30%;
+    color: $rojoNaranja;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.articulo__titulo--marcas {
+    padding-left: 35%;
+}
+
+.articulo__contenido {
+    font-family: $jura-font;
+    color: white;
+    margin-left: 10%;
+    width: 70%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.articulo__enlace:hover {
+    .articulo__titulo{
+        color: white;
+    }
+    .articulo__imagen{
+        border-color: white;
+    }
+}
+
+.pie {
+    margin-top: 5%;
+    margin-left: 3%;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.pie__titulo {
+    margin-left: 0;
+    font-family: $bebas-font;
+}
+
+.redes__item {
+    display: inline;
+    margin-left: 2%;
+}
+
+.redes__icon {
+    color: white;
+    font-size: 400%;
+}
+
+.redes__icon:hover {
+    color:$rojoNaranja;
+    transform: scale(1.1);
+}

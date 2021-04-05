@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Registro para ser miembro del Mundo de la Música YA!, 
+    para estar a tanto de las noticias del mundo de la música, nuevos shows, notificacion de nuevos productos, 
+    y oprevechar los descuentos y promociones">
+
+    <meta name="keywords" content="Mundo de la Música YA!, Instrumentos musicales, noticias musicales, 
+    descuentos, promociones"> 
+
+    <link rel="icon" href="../imagenes/logo.png" type="imagen/png" sizes="20x20">
+
+    <!--aca ahcemos uso de los estilos propios-->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!--aca hacemos uso de los estilos de google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <title>Unete a El Mundo De La Musica YA!</title>
+</head>
+<body class="body-formulario body-formulario--registro"> 
+    <header>
+        <h1 class="body-formulario__titulo body-formulario__titulo--registro">Unete YA!</h1>
+    </header>
+
+    <main>
+        <form class="formulario formulario--registro" action="" method="" enctype=""> 
+            
+            <label class="formulario__label formulario__label--registro" for="nombre">Nombre</label><br>
+            <input class="formulario__campo" type="text" name="nombre"><br><br>
+            
+            <label class="formulario__label formulario__label--registro" for="apellido">Apellido</label><br>
+            <input class="formulario__campo" type="text" name="apellido"><br><br>
+            
+            <label class="formulario__label formulario__label--registro" for="correo">Email</label><br>
+            <input class="formulario__campo" type="email" name="correo"><br><br>
+
+            <label class="formulario__label formulario__label--registro" for="nickname">Nickname</label><br>
+            <input class="formulario__campo" type="text" name="nickname"><br><br>
+            
+            <label class="formulario__label formulario__label--registro" for="constraseña">Constraseña</label><br>
+            <input class="formulario__campo" type="password" name="constraseña"><br><br>
+        
+
+            <input type="checkbox" name="acepta" value="1">
+            <label class="formulario__label formulario__label--terminos" for="acepta">Acepta terminos y condiciones</label><br>
+            <a class="formulario__boton formulario__boton--terminos" href="../terminos/terminos_condiciones.html" target="_blank">ver condiciones</a>
+            <br><br>
+
+            <input class="formulario__boton" type="submit" value="Unirme YA!">
+            <input class="formulario__boton" type="reset" value="Borrar todo">
+
+        </form>
+
+    </main>
+    <footer class="pie"> 
+        &copy derechos reservados 2021
+    </footer>
+</body>
+</html>

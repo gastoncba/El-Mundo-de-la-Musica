@@ -1,0 +1,24 @@
+.metodos {
+    display: flex;
+    flex-direction: row;
+    list-style: none; 
+    padding-left:0;
+}
+
+.metodos__item {
+    margin-left: 3%;
+}
+
+.metodos__icon {
+    color: white;
+    font-size: 400%;
+}
+
+.pagos-titulo {
+    font-family: $bebas-font;
+    font-size: 200%;
+    font-style: italic;
+    color: white;
+    margin-left: 3%;
+}
+

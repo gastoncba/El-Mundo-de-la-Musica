@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/logo.png" type="imagen/png" sizes="20x20">
+
+    <meta name="description" content="En el Mundo de la música YA! brindamos un 
+    servicio de reparación de instrumentos de cuerda, viento, percusión, eléctricos. 
+    cuyos turnos se solicitan a través de nuestro sitio web. 
+    Luego de solicitarlo, usted deberá traerlo, y cuando se obtenga una solución 
+    se le enviara un mensaje vía WhatsApp y/o email con el presupuesto del mismo">
+
+    <meta name="keywords" content="Reparación de instrumentos musicales, instrumentos rotos, 
+    luthier, luthier Córdoba">
+
+    <!--aca ahcemos uso de los estilos propios-->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!--aca hacemos uso de los estilos de google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <title>Turno para Reparación</title>
+</head>
+<body class="body-formulario body-formulario--turno"> 
+    <header>
+        <h1 class="body-formulario__titulo body-formulario__titulo--turno">Turno para Reparacion de instrumentos</h1>
+    </header>
+
+    <main>
+        <form class="formulario formulario--turno" action="" method="" enctype="">
+        
+            <label class="formulario__label formulario__label--turno" for="nombre">Nombre:</label><br>
+            <input class="formulario__campo" type="text" name="nombre" id=""><br><br>
+
+            <label class="formulario__label formulario__label--turno" for="apellido">Apellido: </label><br>
+            <input class="formulario__campo" type="text" name="apellido" id=""><br><br>
+
+            <label class="formulario__label formulario__label--turno" for="telefono">Telefono</label><br>
+            <input class="formulario__campo" type="tel" name="telefono" id=""><br><br>
+
+            <label class="formulario__label" for="tipo_instrumento">Tipo de Instrumento</label>
+                <select class="formulario__combo" name="tipo_instrumento" id="">
+                    <option value="C">Cuerda</option>
+                    <option value="V">Viento</option>
+                    <option value="P">Percución</option>
+                    <option value="E">Electrico</option>
+                </select>
+            <br><br>
+
+            <label class="formulario__label" for="des">Ingrese una breve descripcion acerca del problema</label><br>
+            <textarea class="formulario__texto" name="des" id="" cols="30" rows="10" placeholder="escribe tu problema"></textarea><br>
+
+            <input class="formulario__boton" type="submit" value="Solicitar Turno">
+            <input class="formulario__boton" type="reset" value="Borrar todo">
+
+        </form>
+
+    </main>
+    <footer class="pie"> 
+        &copy derechos reservados 2021
+    </footer>
+</body>
+
+</html>

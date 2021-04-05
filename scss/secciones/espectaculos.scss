@@ -1,0 +1,81 @@
+.espectaculo {
+    margin: 1%;
+    margin-left: 10%;
+    width: 70vw;
+    height: 20vh;
+    border: .2rem solid $rojoNaranja;
+}
+
+@each $i in chinos,zar,mato {
+
+    .espectaculo--#{$i} {
+        background-image: url(..//imagenes/#{$i}.jpg);
+        background-size: cover;
+
+        @if $i==chinos { 
+            background-position: center;
+        } 
+        @else {
+            background-position: top;
+        }
+    }
+}
+
+.espectaculo__titulo {
+    display: inline-block;
+    padding-left: 35%;
+}
+
+.espectaculo__titulo--chinos {
+    @include MedidaTituloEspectaculo($heater-font, 400%,#b34180);
+}
+
+.espectaculo__titulo--zar {
+    @include MedidaTituloEspectaculo($urae-font, 230%, black);
+    letter-spacing: 1rem;
+    padding-bottom: 3rem;
+}
+
+.espectaculo__titulo--mato {
+    @include MedidaTituloEspectaculo($pemanent-font, 200%, white);
+    margin-bottom: 3%; 
+}
+
+.espectaculo__fecha, .espectaculo__entrada {
+    display: none;
+}
+
+
+.espectaculo:hover {
+
+    @include efecto($efectoParaEspectaculo, 4s, 1, ease-in, 0s);
+    
+    height: 100vh;
+
+    .espectaculo__fecha {
+        font-family: $bebas-font;
+        font-size: 200%;
+        font-style: italic;
+        color: black;
+        display: block;     
+        @include efecto($efectoOpacidad, 4s,1, ease-in,0s);
+        
+    }
+
+    .espectaculo__entrada {
+        @extend .espectaculo__fecha;
+        display: inline-block;
+        font-family: heater;
+        color: $colorEntradasDisponibles;
+        background-color: white;
+        text-decoration: none;
+        border-radius: 2rem;
+        padding: 1%;
+        margin-bottom: 5%;
+    }
+
+    .espectaculo__entrada--agotada {
+        color: $colorEntradasAgotadas;
+    }
+} 
+

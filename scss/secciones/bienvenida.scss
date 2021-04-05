@@ -1,0 +1,36 @@
+.bienvenida__parrafo {
+    font-family: $jura-font;
+    font-size: 140%;
+    color: white;
+    margin: 3% 5%;
+}
+
+.bienvenida__parrafo--registro {
+    font-family: $bebas-font;
+    font-style: italic;
+    font-size: 150%;
+    color: rgb(148, 233, 79);
+    margin-left: 0;
+}
+
+.bienvenida__separador {
+    @include efecto($efectoParaBarra, 4s, 1, ease-in, 0s);
+    background: $gradienteLinealRojoAmarillo;
+    height: 5px;
+}
+
+.boton-volver {
+    display: inline-block;
+    font-size: 160%;
+    color: rgb(148, 233, 79);
+    border: 0.2rem solid rgb(148, 233, 79);
+    padding: 1%;
+    border-radius: 2rem;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.boton-volver__enlace {
+    @extend .bienvenida__parrafo--registro;
+    text-decoration: none;
+}

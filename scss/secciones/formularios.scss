@@ -1,0 +1,132 @@
+.body-formulario {
+    @extend .estructura-imagen;
+}
+
+@each $type-form, $url-foto in $foto-forms {
+    .body-formulario--#{$type-form} {
+        background-image: $url-foto; 
+    }
+}
+
+.body-formulario__titulo {
+    display: inline-block;
+    font-family: $bebas-font; 
+    font-style: italic;
+    color: white; 
+    font-size: $titulos-form;
+    border-radius: 2rem;
+    padding: 0.1% 0.8%;
+}
+
+.body-formulario__titulo--registro {
+    margin-left: 41%;
+}
+
+.body-formulario__titulo--login{
+    margin-left: 39%;
+}
+
+.body-formulario__titulo--turno {
+    margin-left: 30%;
+}
+
+.formulario {
+    font-family: $bebas-font; 
+    font-style: italic;
+    color: white; 
+    border-radius: 2rem;
+    margin-top: 5%;
+    box-shadow: 0rem 0rem 1rem 1rem rgba(247, 239, 239, 0.2);
+}
+
+.formulario--registro {
+    width: 40vw;
+    margin-top: 3%;
+    margin-left: 28%
+}
+
+.formulario--login {
+    width: 25vw;
+    margin-left: 35%;
+}
+
+.formulario--turno {
+    width: 38vw;
+    margin-left: 30%;
+}
+
+.formulario__label {
+    font-size: $letra-form;
+    margin-left: 0;
+}
+
+.formulario__label--registro {
+    margin-left: 40%;
+}
+
+.formulario__label--login {
+    margin-left: 30%;
+}
+
+.formulario__label--turno {
+    margin-left: 30%;
+}
+
+.formulario__campo{
+    width: 100%;
+    border-radius: 2rem;
+    font-family: $roboto-font;
+    font-size: $campos-form;
+}
+
+.formulario__boton {
+    @extend .formulario__campo;
+    font-family: $bebas-font;
+    font-size: $letra-form;
+    font-style: italic;
+    color: black;
+    border-color: $color-bordes-botones;
+    background-color: $color-botones;
+    padding: 1%;
+    margin-bottom: 3%;
+}
+
+.formulario__boton--terminos {
+    padding: 0.1rem 0.3rem;
+    margin-left: 0.5%;
+    border-radius: 1rem; 
+    text-decoration: none;
+}
+
+.formulario__ayuda {
+    text-decoration:none;
+    color: white;
+    font-size: $ayuda-form;
+    font-style: italic;
+    margin-left: 18%;
+}
+
+.formulario__boton:hover {
+    background-color:$hover-form;
+}
+
+.formulario__ayuda:hover {
+    color: $hover-form;
+}
+
+.formulario__combo {
+    height: 2rem;
+    width: 10rem;
+    border-radius: 1rem;
+    font-family: $bebas-font;
+    font-size: $combo-form;
+}
+
+.formulario__texto {
+    width: 90%;
+    font-family: $bebas-font;
+    font-size: $texto-form;
+    background: transparent;
+    color: white;
+    margin-left: 5%;
+}
