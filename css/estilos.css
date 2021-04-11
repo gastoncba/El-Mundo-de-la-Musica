@@ -325,13 +325,15 @@ titulo común*/
 .producto__imagen {
   border-radius: 1rem;
   width: 100%;
-  height: 65vh; }
+  height: 80vh;
+  /*65vh*/ }
 
 .producto__nombre, .producto__stock {
   font-family: 'Bebas Neue', cursive;
   font-style: italic;
   font-size: 150%;
-  color: white; }
+  color: white;
+  margin-left: 3%; }
 
 .producto__stock {
   color: #94ebcd; }
