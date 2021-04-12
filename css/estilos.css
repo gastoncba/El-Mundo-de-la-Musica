@@ -344,11 +344,14 @@ titulo común*/
 .producto__imagen--bateria, .producto__imagen--sintetizador, .producto__imagen--armonica {
   height: 36vh; }
 
-.producto__imagen--acordeon, .producto__imagen--bongoes {
+.producto__imagen--acordeon, .producto__imagen--bongoes, .producto__imagen--equipo {
   height: 40vh; }
 
-.producto__imagen--afinador {
+.producto__imagen--afinador, .producto__imagen--amplificador {
   height: 65vh; }
+
+.producto__imagen--electricas {
+  vertical-align: middle; }
 
 .producto__nombre, .producto__stock {
   font-family: 'Bebas Neue', cursive;
@@ -509,7 +512,7 @@ titulo común*/
 .formulario__texto {
   width: 90%;
   font-family: "Bebas Neue", cursive;
-  font-size: 70%;
+  font-size: 130%;
   background: transparent;
   color: white;
   margin-left: 5%; }
@@ -1025,6 +1028,11 @@ solo cambia la dirección de la imagen*/
     padding-left: 33%; }
   .articulo__titulo--espectaculos {
     padding-left: 33%; }
+  /*se adaptan nuevanmente los titulos de los forms*/
+  .body-formulario__titulo--registro {
+    margin: 0 25%; }
+  .body-formulario__titulo--login {
+    margin: 0 15%; }
   /*Se adapta la seccion de espectaculos*/
   /*Se adapta el titulo de la seccion de espectaculos*/
   #titulo-espectaculo {

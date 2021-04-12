@@ -43,8 +43,20 @@
     @extend .producto__imagen--acordeon;
 }
 
+.producto__imagen--equipo {
+    @extend .producto__imagen--acordeon;
+}
+
 .producto__imagen--afinador {
     height: 65vh;
+}
+
+.producto__imagen--amplificador {
+    @extend .producto__imagen--afinador;
+}
+
+.producto__imagen--electricas {
+    vertical-align: middle;
 }
 
 .producto__nombre, .producto__stock {
