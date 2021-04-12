@@ -26,7 +26,7 @@
 
 .menu-amplificadores__guitarra:hover {
     box-shadow: 0rem 0rem 1rem 1rem rgba(247, 239, 239, 0.2);
-    transform: scale(1.1);
+    @include efecto($efectoParaMenusDeBajos, 4s, 1, ease-in, 0s);
 }
 
 .menu-amplificadores__bajo:hover {

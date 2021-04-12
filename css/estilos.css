@@ -110,6 +110,20 @@
   100% {
     height: 100vh; } }
 
+@keyframes efectoParaMenusDeBajos {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(1.1); }
+  50% {
+    transform: scale(1.2); }
+  65% {
+    transform: scale(1.2); }
+  75% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
 /*Direcciones*/
 /*Imagenes para forms utilizando maps*/
 /*Imagenes para página de las marcas*/
@@ -325,8 +339,16 @@ titulo común*/
 .producto__imagen {
   border-radius: 1rem;
   width: 100%;
-  height: 80vh;
-  /*65vh*/ }
+  height: 95vh; }
+
+.producto__imagen--bateria, .producto__imagen--sintetizador, .producto__imagen--armonica {
+  height: 36vh; }
+
+.producto__imagen--acordeon, .producto__imagen--bongoes {
+  height: 40vh; }
+
+.producto__imagen--afinador {
+  height: 65vh; }
 
 .producto__nombre, .producto__stock {
   font-family: 'Bebas Neue', cursive;
@@ -768,7 +790,11 @@ solo cambia la dirección de la imagen*/
 
 .menu-amplificadores__guitarra:hover, .menu-amplificadores__bajo:hover {
   box-shadow: 0rem 0rem 1rem 1rem rgba(247, 239, 239, 0.2);
-  transform: scale(1.1); }
+  animation-name: efectoParaMenusDeBajos;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-delay: 0s; }
 
 .menu-amplificadores__guitarra, .menu-amplificadores__bajo {
   background-image: url(../imagenes/guitarra_con_ampli.jpg); }
