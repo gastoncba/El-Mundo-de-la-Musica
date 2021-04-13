@@ -819,12 +819,30 @@ solo cambia la dirección de la imagen*/
   color: white;
   font-size: 400%; }
 
-.pagos-titulo {
+.pagos-titulo, .pagos-efectivo, .pagos-tarjeta {
   font-family: "Bebas Neue", cursive;
   font-size: 200%;
   font-style: italic;
   color: white;
   margin-left: 3%; }
+
+.payments-medium {
+  background: url(https://http2.mlstatic.com/secure/payment-logos/v2/payment-logos-mla-medium_v_42deeb6b38.png) no-repeat; }
+
+._mercadopago_cc-medium {
+  width: 100px;
+  height: 23px;
+  background-position: left -1405px; }
+
+._rapipago-medium {
+  width: 76px;
+  height: 14px;
+  background-position: left -375px; }
+
+._pagofacil-medium {
+  width: 22px;
+  height: 22px;
+  background-position: left 0; }
 
 .terminos {
   font-family: "Bebas Neue", cursive;
