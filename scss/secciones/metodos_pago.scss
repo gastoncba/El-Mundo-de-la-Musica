@@ -11,23 +11,28 @@
 
 .metodos__icon {
     color: white;
-    font-size: 400%;
+    font-size: 300%;
 }
 
 .pagos-titulo {
-    font-family: $bebas-font;
+    font-family: $jura-font;
     font-size: 200%;
-    font-style: italic;
     color: white;
     margin-left: 3%;
 }
 
 .pagos-efectivo {
     @extend .pagos-titulo;
+    font-size: 100%;
+    margin-top: .4%;
 }
 
 .pagos-tarjeta {
-    @extend .pagos-titulo;
+    @extend .pagos-efectivo;
+}
+
+.pagos-mercado-pago{
+    @extend .pagos-efectivo;
 }
 
 .payments-medium {
