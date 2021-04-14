@@ -157,24 +157,12 @@
     }
 }
 
-@keyframes efectoParaMenusDeBajos {
+@keyframes efectoParaMenusDeAmplificadores {
     0% {
         transform: scale(1);
     }
 
-    25% {
-        transform: scale(1.1);
-    }
-
     50% {
-        transform: scale(1.2);
-    }
-
-    65% {
-        transform: scale(1.2);
-    }
-
-    75% {
         transform: scale(1.1);
     }
 
@@ -182,8 +170,6 @@
         transform: scale(1);
     }
 }   
-
-
 $efectoParaTituloPrincipal: efectoParaTituloPrincipal;
 $efectoCuadroDeformado: efectoCuadroDeformado;
 $efectoParaBarra: efectoParaBarra;
@@ -193,7 +179,7 @@ $zoomParaSeccion: zoomParaSeccion;
 $efectoOpacidad: efectoOpacidad;
 $efectoParaSecciones: efectoParaSecciones;
 $efectoParaEspectaculo: efectoParaEspectaculo;
-$efectoParaMenusDeBajos: efectoParaMenusDeBajos;
+$efectoParaMenusDeAmplificadores: efectoParaMenusDeAmplificadores;
 
 @mixin efecto($name, $time, $iteration, $timing, $delay) {
     animation-name: $name;
