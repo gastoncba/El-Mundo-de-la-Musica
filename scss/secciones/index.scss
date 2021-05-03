@@ -84,9 +84,9 @@
 
 .principal {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 0.5fr);
     grid-template-rows: 1fr 1fr;
-    grid-gap: 2%;
+    grid-gap: 70px;
 }
 
 .articulo__enlace {
@@ -97,12 +97,12 @@
     width: 25vw;
     border-radius: 50%;
     border: 0.04rem solid $rojoNaranja;
-    margin-left: 5%;
+    margin-left: 15%;
 }
 
 .articulo__titulo {
     font-family: $bebas-font;
-    padding-left: 30%;
+    padding-left: 33%;
     color: $rojoNaranja;
     text-align: justify;
     text-justify: inter-word;
