@@ -23,6 +23,10 @@
   font-family: 'gtartings';
   src: url(../font/gtartings/Gtartings.ttf) format("truetype"); }
 
+@font-face {
+  font-family: 'icon';
+  src: url(../font/icon/icon.ttf) format("truetype"); }
+
 @keyframes efectoParaTituloPrincipal {
   0% {
     opacity: 0; }
@@ -121,8 +125,6 @@
 /*Direcciones*/
 /*Imagenes para forms utilizando maps*/
 /*Imagenes para página de las marcas*/
-/*Imagenes de instrumentos de marca nacional utilizando maps**/
-/*Imagenes de instrumentos para dispositivos mobile utilizando maps**/
 /*Imagen de portada de la página principal*/
 /*Medidas utilizadas en el sitio web*/
 /*letras y campos de los formularios*/
@@ -211,6 +213,36 @@ titulo común*/
   border: 0.04rem solid #ea5455;
   margin-left: 15%; }
 
+.articulo__imagen:before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 220%;
+  background: #eb3583;
+  top: -50%;
+  left: -100%;
+  z-index: 1;
+  transform: rotate(25deg);
+  transform-origin: center top 0;
+  transition: .5s; }
+
+.articulo__imagen:hover:before {
+  left: 10%; }
+
+.card img {
+  width: 100%;
+  height: auto; }
+
+.card-text {
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: -100%;
+  color: #fff;
+  left: 0;
+  z-index: 2;
+  transition: 1.1s; }
+
 .articulo__titulo {
   font-family: "Bebas Neue", cursive;
   padding-left: 33%;
@@ -235,28 +267,62 @@ titulo común*/
 .articulo__enlace:hover .articulo__imagen {
   border-color: white; }
 
-.pie {
-  margin-top: 5%;
-  margin-left: 3%;
-  color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold; }
+.separador_index {
+  background-color: #ea5455;
+  height: 5px; }
 
-.pie__titulo {
-  margin-left: 0;
-  font-family: "Bebas Neue", cursive; }
+.pie {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 80px;
+  font-family: "Jura", sans-serif;
+  color: white; }
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 .redes__item {
   display: inline;
-  margin-left: 2%; }
+  margin-left: 10%; }
 
 .redes__icon {
   color: white;
-  font-size: 400%; }
+  font-size: 200%; }
 
-.redes__icon:hover {
+.redes__icon:hover, .item-pie ul li:hover a {
   color: #ea5455;
   transform: scale(1.1); }
+
+.logo {
+  font-size: 600%;
+  color: white; }
+
+.logo-titulo {
+  font-family: lazer;
+  color: white; }
+
+.item-pie {
+  margin-left: 2%; }
+
+.titulo-pie {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-size: 200%; }
+
+.item-pie {
+  display: flex;
+  flex-direction: column; }
+
+.item-pie ul {
+  list-style: none;
+  padding-left: 0 !important; }
+
+.item-pie ul li a {
+  font-family: "Jura", sans-serif;
+  text-decoration: none;
+  color: white; }
 
 .titulo {
   font-family: "Bebas Neue", cursive;
@@ -551,7 +617,12 @@ titulo común*/
   font-style: italic;
   font-size: 150%;
   color: #94e94f;
-  margin-left: 0; }
+  margin-left: 0;
+  animation-name: zoomParaTitulos;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 0s; }
 
 .bienvenida__separador {
   animation-name: efectoParaBarra;
@@ -609,77 +680,48 @@ titulo común*/
   font-size: 190%;
   margin-left: 30%; }
 
-.seccion-instrumento {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 60vw;
-  height: 40vh;
-  margin-left: 10%;
-  margin-top: 5%;
-  border: 0.1rem solid #16c79a;
-  border-radius: 2rem;
-  animation-name: efectoParaSecciones;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-delay: 0s; }
+.container {
+  margin-top: 10%; }
 
-.seccion-instrumento--strato {
-  background-image: url(../imagenes/strato_alga.jpg); }
+.card {
+  position: relative;
+  overflow: hidden; }
 
-.seccion-instrumento--gothic {
-  background-image: url(../imagenes/gothic_carbono.jpg); }
+.card:before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 220%;
+  background: #eb3583;
+  top: -50%;
+  left: -100%;
+  z-index: 1;
+  transform: rotate(25deg);
+  transform-origin: center top 0;
+  transition: .5s; }
 
-.instrumento {
-  font-family: "Bebas Neue", cursive;
-  font-style: italic;
-  color: white;
-  font-size: 130%;
-  width: 50%;
-  background: black;
-  background: linear-gradient(270deg, black 0%, #060606 82%, rgba(252, 252, 252, 0) 100%);
-  border-radius: 2rem;
-  animation-name: efectoOpacidad;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-delay: 0s; }
+.card:hover:before {
+  left: 10%; }
 
-.instrumento__icon-marca {
-  font-family: "Long Cang", cursive;
-  font-size: 160%; }
+.card img {
+  width: 100%;
+  height: auto; }
 
-.instrumento__descripcion {
-  display: inline-block;
-  color: black;
-  background-color: white;
-  border-radius: 1rem;
-  font-size: 130%;
-  padding: 0 1%; }
+.card-text {
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: -100%;
+  color: #fff;
+  left: 0;
+  z-index: 2;
+  transition: 1.1s; }
 
-.parrafo {
-  font-family: "Bebas Neue", cursive;
-  font-size: 170%;
-  font-style: italic;
-  margin-left: 10%;
-  color: white; }
+.card-text h3 {
+  font-family: "Bebas Neue", cursive; }
 
-.parrafo__boton {
-  background-color: white;
-  color: black;
-  margin-left: 1%;
-  padding: 0 1%;
-  border-radius: 2rem;
-  text-decoration: none; }
-
-.parrafo__boton:hover {
-  background-color: #16c79a;
-  color: white; }
+.card:hover .card-text {
+  top: 10px; }
 
 /*esta seccion es para secciones o páginas que poseen una imagen de fondo, van a ser con estructuras similares
 solo cambia la dirección de la imagen*/
@@ -925,21 +967,9 @@ solo cambia la dirección de la imagen*/
     width: 100%; }
   .producto__imagen {
     height: auto; }
-  /*Se adaptan las secciones de los intrumentos de marcas nacionales*/
-  .seccion-instrumento--strato, .seccion-instrumento--gothic {
-    width: 100vw;
-    margin-left: 0;
-    border-radius: 0;
-    animation-name: none; }
-  .seccion-instrumento--strato {
-    background-image: url(../imagenes/algas_2.jpg); }
-  .seccion-instrumento--gothic {
-    background-image: url(../imagenes/gothic_1.jpg); }
-  .instrumento {
-    width: 100%;
-    margin-left: 1%;
-    background: none; }
-  /*Se adapta el titulo principal de la página de los instrumentos nacionales*/
+  /*Se adaptan las secciones de los intrumentos de marcas nacionales
+    
+    /*Se adapta el titulo principal de la página de los instrumentos nacionales*/
   .titulo--nacionales {
     background: #16c79a;
     width: 100vw;
@@ -965,7 +995,12 @@ solo cambia la dirección de la imagen*/
     font-size: 260%;
     padding-left: 3%; }
   .titulo {
-    margin-right: 20%; } }
+    margin-right: 20%; }
+  /*se adapta pie de pagina*/
+  .pie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; } }
 
 /*Smartphone*/
 @media only screen and (max-device-width: 576px) {
@@ -1037,7 +1072,14 @@ solo cambia la dirección de la imagen*/
     margin: 0; }
   /*Se adapta el titulo te esperamos de la tabla de horarios*/
   #titulo-te-esperamos {
-    margin: 0; } }
+    margin: 0; }
+  /*se adapta el pie de pagina*/
+  .pie {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 2%;
+    margin-bottom: 25%; } }
 
 /*Small Smartphones*/
 @media only screen and (max-device-width: 320px) {

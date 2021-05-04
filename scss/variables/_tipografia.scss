@@ -29,6 +29,11 @@
     src: url(../font/gtartings/Gtartings.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'icon';
+    src: url(../font/icon/icon.ttf) format('truetype');
+}
+
 $lazer-font: lazer;
 $travel-font: travel;
 $marcas-font: gtartings;
@@ -40,3 +45,4 @@ $bebas-font: 'Bebas Neue', cursive;
 $jura-font: 'Jura', sans-serif;
 $pemanent-font: 'Permanent Marker', cursive;
 $roboto-font:'Roboto', sans-serif;
+$icon-font: 'icon';

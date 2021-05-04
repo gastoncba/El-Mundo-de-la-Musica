@@ -107,26 +107,8 @@
         height:auto;
     }
 
-    /*Se adaptan las secciones de los intrumentos de marcas nacionales*/
-    .seccion-instrumento--strato, .seccion-instrumento--gothic {
-        width: 100vw;
-        margin-left: 0;
-        border-radius: 0;
-        animation-name: none;
-    }
-   
-    @each $instrumento, $url-foto in $foto-instrumento-nacional-mobile {
-        .seccion-instrumento--#{$instrumento} {
-            background-image: $url-foto;
-        }
-    }
-
-    .instrumento {
-        width: 100%;
-        margin-left: 1%;
-        background: none;
-    }
-
+    /*Se adaptan las secciones de los intrumentos de marcas nacionales
+    
     /*Se adapta el titulo principal de la página de los instrumentos nacionales*/
     .titulo--nacionales {
         background: $verdeAgua;
@@ -163,6 +145,14 @@
     .titulo {
         margin-right: 20%;
     }
+    /*se adapta pie de pagina*/
+
+    .pie {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+        
 }
 
 /*Smartphone*/
@@ -276,6 +266,16 @@
     /*Se adapta el titulo te esperamos de la tabla de horarios*/
     #titulo-te-esperamos {
         margin: 0;
+    }
+
+    /*se adapta el pie de pagina*/
+    .pie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 2%;
+
+        margin-bottom: 25%;
     }
 }
 

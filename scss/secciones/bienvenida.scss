@@ -11,6 +11,7 @@
     font-size: 150%;
     color: rgb(148, 233, 79);
     margin-left: 0;
+    @include efecto($zoomParaTitulos, 4s, infinite, ease-in, 0s);
 }
 
 .bienvenida__separador {

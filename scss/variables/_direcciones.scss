@@ -10,17 +10,6 @@ $foto-forms:(
 /*Imagenes para página de las marcas*/
 $foto-marcas: url(../imagenes/jan-kopriva-_s5qrtDzwHs-unsplash.jpg);
 
-/*Imagenes de instrumentos de marca nacional utilizando maps**/
-$foto-instrumento-nacional:(
-    strato: url(../imagenes/strato_alga.jpg), 
-    gothic: url(../imagenes/gothic_carbono.jpg)
-);
-
-/*Imagenes de instrumentos para dispositivos mobile utilizando maps**/
-$foto-instrumento-nacional-mobile: (
-    strato: url(../imagenes/algas_2.jpg),
-    gothic: url(../imagenes/gothic_1.jpg)
-);
 
 /*Imagen de portada de la página principal*/
 $foto_portada: url(../imagenes/portada.jpg);
